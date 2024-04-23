@@ -14,7 +14,7 @@ ENV PATH=/root/.local/share/solana/install/active_release/bin:$PATH
 RUN cargo install --git https://github.com/coral-xyz/anchor --tag $ANCHOR_VERSION anchor-cli --locked
 # RUN cargo install --git https://github.com/skrrb/anchor --branch cli/run-test-subset anchor-cli --locked
 
-RUN curl -fsSL https://deb.nodesource.com/setup_17.x | bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
 RUN apt-get install -y nodejs
 
 RUN npm install --global yarn
